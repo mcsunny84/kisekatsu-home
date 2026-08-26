@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<!--
+DIRECTION CONTRACT
+THESIS: 승리의 포스터 인쇄소 — 사진이 식욕을 만들고, 활자가 승리를 선언한다.
+거부하는 배열: 크림 배경 위 가운데 정렬 대칭 카드의 반복(사진 없는 시작 화면).
+OWN-WORLD: 먹 #0b0b0a · 종이 #f4eedf · 크림슨 #be1e2d · 목재 #8c4936.
+2px 먹선 괘선, 단색 오프셋 그림자, 세리프 勝 도장, 마퀴 띠는 전체 1곳.
+콘텐츠를 지워도 "인쇄소에서 찍은 승리 포스터"로 읽힌다.
+STORY: 검색으로 온 손님이 사진→서사→메뉴→매장 순으로 신뢰를 얻고
+네이버 플레이스(예약·길찾기)로 떠난다.
+FIRST VIEWPORT: 로스카츠 한 상 풀블리드 + 14초 느린 줌. 좌하단에 초대형
+EAT A VICTORY!(영문)와 한글 보조 헤드라인, 우상단 기울인 勝 스탬프 1개.
+FORM: 2026-07-29 승인된 2차 설계도의 10씬. 씬당 장식 1개.
+BUILD NOTE: 도메인 확정 시 https://kisekatsu.kr 문자열 일괄 치환(canonical/OG/JSON-LD).
+-->
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>키세카츠 KISEKATSU — 승리를 파는 돈카츠 · 신사 가로수길 · 안국 북촌</title>
+<meta name="description" content="300시간 저온숙성 프리미엄 돈카츠 키세카츠. 일본에서 승리를 기원하며 먹는 카츠(勝つ)의 문화를 서울 신사 가로수길과 안국 북촌에서. 두 지점 리뷰 2,600+.">
+<link rel="canonical" href="https://kisekatsu.kr/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="키세카츠 KISEKATSU — EAT A VICTORY!">
+<meta property="og:description" content="300시간 저온숙성 프리미엄 돈카츠. 신사 가로수길 · 안국 북촌.">
+<meta property="og:url" content="https://kisekatsu.kr/">
+<meta property="og:image" content="https://kisekatsu.kr/assets/img/og.jpg">
+<meta property="og:locale" content="ko_KR">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kisekatsu.kr/#brand",
+      "name": "키세카츠",
+      "alternateName": "KISEKATSU",
+      "url": "https://kisekatsu.kr/",
+      "logo": "https://kisekatsu.kr/favicon.svg",
+      "slogan": "EAT A VICTORY!",
+      "sameAs": ["https://www.instagram.com/kise.katsu"]
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://kisekatsu.kr/#sinsa",
+      "name": "키세카츠 신사역점",
+      "servesCuisine": "돈카츠",
+      "priceRange": "₩10,000~₩20,000",
+      "telephone": "0507-1434-9179",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "논현로149길 52 1층 101호",
+        "addressLocality": "강남구",
+        "addressRegion": "서울",
+        "addressCountry": "KR"
+      },
+      "url": "https://kisekatsu.kr/",
+      "sameAs": ["https://map.naver.com/p/entry/place/1186508365"],
+      "openingHours": "Mo-Su 11:00-16:00,17:00-21:00",
+      "acceptsReservations": "https://map.naver.com/p/entry/place/1186508365",
+      "parentOrganization": {"@id": "https://kisekatsu.kr/#brand"}
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://kisekatsu.kr/#anguk",
+      "name": "키세카츠 안국역점",
+      "servesCuisine": "돈카츠",
+      "priceRange": "₩10,000~₩20,000",
+      "telephone": "0507-1338-1981",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "율곡로 88 2층 205호",
+        "addressLocality": "종로구",
+        "addressRegion": "서울",
+        "addressCountry": "KR"
+      },
+      "url": "https://kisekatsu.kr/",
+      "sameAs": ["https://map.naver.com/p/entry/place/2086785604"],
+      "openingHours": "Mo-Su 11:00-16:00,17:00-21:00",
+      "acceptsReservations": "https://map.naver.com/p/entry/place/2086785604",
+      "parentOrganization": {"@id": "https://kisekatsu.kr/#brand"}
+    }
+  ]
+}
+</script>
+<style>
+  @font-face {
+    font-family: 'Pretendard Variable';
+    src: url('assets/fonts/PretendardVariable.woff2') format('woff2-variations');
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+  }
+  :root {
+    --ink: #0b0b0a;
+    --paper: #f4eedf;
+    --crimson: #be1e2d;
+    --wood: #8c4936;
+    --paper-70: rgba(244,238,223,.72);
+    --ink-12: rgba(11,11,10,.12);
+    --sans: 'Pretendard Variable', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    --serif-jp: 'Yu Mincho', 'Hiragino Mincho ProN', 'Noto Serif CJK KR', 'Batang', serif;
+    --frame: 2px solid var(--ink);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans); background: var(--paper); color: var(--ink);
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+    font-size: 16px; line-height: 1.85;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  ::selection { background: var(--crimson); color: var(--paper); }
+  :focus-visible { outline: 3px solid var(--crimson); outline-offset: 3px; }
+
+  .skip {
+    position: absolute; left: -9999px; top: 0; z-index: 300;
+    background: var(--ink); color: var(--paper); padding: 12px 20px; font-weight: 700;
+  }
+  .skip:focus { left: 0; }
+
+  /* ── 활자 체계 ── */
+  .display {
+    font-weight: 900; text-transform: uppercase;
+    letter-spacing: -.045em; line-height: .88;
+  }
+  .label-en {
+    font-weight: 650; font-size: 12px; letter-spacing: .34em;
+    text-transform: uppercase;
+  }
+  .h-ko { font-weight: 850; letter-spacing: -.015em; line-height: 1.42; }
+
+  /* ── 헤더 ── */
+  header.top {
+    position: fixed; inset: 0 0 auto 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 26px clamp(20px, 4.5vw, 60px);
+    mix-blend-mode: difference; color: #fff;
+    pointer-events: none;
+  }
+  header.top a { pointer-events: auto; }
+  .brand-lockup { display: flex; align-items: baseline; gap: 14px; text-decoration: none; }
+  .brand-lockup b { font-weight: 900; font-size: 19px; letter-spacing: .3em; }
+  .brand-lockup span { font-weight: 650; font-size: 10px; letter-spacing: .42em; opacity: .85; }
+  nav.top-nav { display: flex; gap: 34px; }
+  nav.top-nav a {
+    text-decoration: none; font-weight: 700; font-size: 12.5px; letter-spacing: .26em;
+    opacity: .85; transition: opacity .25s;
+  }
+  nav.top-nav a:hover { opacity: 1; }
+
+  /* ── 모바일 하단 앵커바 ── */
+  .anchor-bar {
+    display: none; position: fixed; inset: auto 0 0 0; z-index: 110;
+    background: var(--ink); border-top: var(--frame);
+  }
+  .anchor-bar a {
+    flex: 1; text-align: center; padding: 15px 4px calc(15px + env(safe-area-inset-bottom, 0px));
+    color: var(--paper); text-decoration: none; font-weight: 700; font-size: 12px; letter-spacing: .14em;
+  }
+  .anchor-bar a + a { border-left: 1px solid rgba(244,238,223,.22); }
+  .anchor-bar a.res { background: var(--crimson); }
+
+  /* ── 히어로 ── */
+  .hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; overflow: hidden; }
+  .hero-photo { position: absolute; inset: 0; }
+  .hero-photo img {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: saturate(.8) contrast(1.06);
+    animation: breathe 14s ease-in-out infinite alternate;
+  }
+  @keyframes breathe { from { transform: scale(1); } to { transform: scale(1.06); } }
+  .hero-shade {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(to top, rgba(11,11,10,.82) 0%, rgba(11,11,10,.34) 42%, rgba(11,11,10,.12) 70%),
+      linear-gradient(105deg, rgba(11,11,10,.5) 0%, rgba(11,11,10,0) 55%);
+  }
+  .hero-stamp {
+    position: absolute; top: clamp(86px, 12vh, 130px); right: clamp(20px, 6vw, 90px);
+    width: clamp(84px, 10vw, 128px); height: clamp(84px, 10vw, 128px);
+    border: 3px solid var(--crimson); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif-jp); font-weight: 700; color: var(--crimson);
+    font-size: clamp(46px, 5.6vw, 72px);
+    transform: rotate(6deg);
+    background: rgba(244,238,223,.9);
+  }
+  .hero-inner {
+    position: relative; width: 100%; max-width: 1440px; margin: 0 auto;
+    padding: 0 clamp(20px, 4.5vw, 60px) clamp(56px, 9vh, 110px);
+    color: var(--paper);
+  }
+  .hero-topline { display: flex; align-items: center; gap: 18px; color: var(--paper); }
+  .hero-topline::before { content: ''; width: 46px; height: 2px; background: var(--crimson); }
+  .hero h1.display {
+    margin-top: 26px;
+    font-size: clamp(64px, 12.5vw, 176px);
+  }
+  .hero h1 .line2 { display: block; }
+  .hero h1 .hollow { color: transparent; -webkit-text-stroke: 2.5px var(--paper); }
+  .hero h1 .bang { color: var(--crimson); -webkit-text-stroke: 0; }
+  .hero-ko {
+    margin-top: 30px; font-size: clamp(19px, 2.5vw, 27px);
+    font-weight: 850; letter-spacing: -.01em;
+  }
+  .hero-meta {
+    margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px 30px;
+    font-weight: 600; font-size: 13px; letter-spacing: .2em; color: var(--paper-70);
+  }
+  .scroll-hint {
+    position: absolute; right: clamp(20px, 4.5vw, 60px); bottom: clamp(56px, 9vh, 110px);
+    font-weight: 650; font-size: 10px; letter-spacing: .44em; color: var(--paper-70);
+    writing-mode: vertical-rl;
+  }
+  .scroll-hint::after {
+    content: ''; display: block; width: 1px; height: 52px; background: var(--paper);
+    margin: 14px auto 0; animation: drop 2.2s cubic-bezier(.2,.7,.3,1) infinite;
+  }
+  @keyframes drop { 0% { transform: scaleY(0); transform-origin: top; } 55% { transform: scaleY(1); } 100% { transform: scaleY(1); opacity: 0; } }
+
+  /* ── 마퀴 (전체 1곳) ── */
+  .marquee { overflow: hidden; background: var(--crimson); border-block: var(--frame); padding: 15px 0; }
+  .marquee-track { display: flex; width: max-content; animation: slide 26s linear infinite; }
+  .marquee-track span {
+    font-weight: 900; font-size: 15px; letter-spacing: .3em; color: var(--paper);
+    white-space: nowrap; padding-right: 64px; text-transform: uppercase;
+  }
+  .marquee-track span.jp { font-family: var(--serif-jp); font-weight: 700; letter-spacing: .18em; }
+  @keyframes slide { to { transform: translateX(-50%); } }
+
+  /* ── 공통 씬 ── */
+  section { position: relative; }
+  .inner { max-width: 1440px; margin: 0 auto; padding-inline: clamp(20px, 4.5vw, 60px); }
+  .scene-head {
+    display: grid; grid-template-columns: auto 1fr; gap: 22px clamp(24px, 4vw, 64px);
+    align-items: start;
+  }
+  .scene-no {
+    width: 58px; height: 58px; border: var(--frame); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 15px; letter-spacing: .08em;
+  }
+  .scene-head .label-en { color: var(--crimson); margin-bottom: 14px; }
+  .scene-title { font-size: clamp(30px, 4vw, 52px); }
+
+  /* ── 01 스토리·네이밍 ── */
+  .story { padding: clamp(110px, 14vh, 170px) 0; }
+  .story-grid {
+    margin-top: clamp(56px, 7vw, 96px);
+    display: grid; grid-template-columns: 5fr 6fr; gap: clamp(40px, 6vw, 110px);
+    align-items: start;
+  }
+  .story-photo { position: sticky; top: 110px; }
+  .story-photo figure { position: relative; border: var(--frame); }
+  .story-photo img { filter: saturate(.8) contrast(1.06); }
+  .story-photo figure::after {
+    content: ''; position: absolute; inset: 0; transform: translate(14px, 14px);
+    border: 2px solid var(--crimson); z-index: -1;
+  }
+  .story-photo figcaption {
+    margin-top: 20px; font-weight: 650; font-size: 11px; letter-spacing: .3em; color: var(--wood);
+    text-transform: uppercase;
+  }
+  .naming-pair { border-top: var(--frame); }
+  .naming-row { display: flex; align-items: baseline; gap: 26px; padding: 30px 2px; border-bottom: var(--frame); }
+  .naming-kanji { font-family: var(--serif-jp); font-weight: 700; font-size: clamp(42px, 4.6vw, 62px); color: var(--crimson); line-height: 1; flex-shrink: 0; }
+  .naming-row h3 { font-size: 20px; font-weight: 850; letter-spacing: .02em; }
+  .naming-row p { font-size: 14.5px; color: rgba(11,11,10,.74); margin-top: 6px; }
+  .story-copy { margin-top: 46px; }
+  .story-copy > p { font-size: 16.5px; line-height: 2.1; color: rgba(11,11,10,.82); margin-bottom: 30px; max-width: 33em; }
+  .story-copy strong { font-weight: 800; color: var(--ink); }
+  .story-sum {
+    margin-top: 40px; font-size: clamp(21px, 2.4vw, 28px); font-weight: 850; line-height: 1.7;
+  }
+  .story-sum b { color: var(--crimson); }
+
+  /* ── 선언 (70svh) ── */
+  .declare {
+    min-height: 70svh; background: var(--ink); color: var(--paper);
+    display: flex; align-items: center; border-block: var(--frame);
+  }
+  .declare .inner { width: 100%; padding-block: 90px; }
+  .declare .display { font-size: clamp(56px, 9.5vw, 138px); }
+  .declare .display em { font-style: normal; color: transparent; -webkit-text-stroke: 2px var(--paper); }
+  .declare .display .win { color: var(--crimson); }
+  .declare-ko {
+    margin-top: 34px; font-size: clamp(17px, 1.9vw, 21px); font-weight: 500;
+    color: rgba(244,238,223,.78); max-width: 36em; line-height: 2.05;
+    margin-left: clamp(0px, 14vw, 260px);
+  }
+  .declare-ko strong { color: var(--paper); font-weight: 800; }
+
+  /* ── 02 크래프트 ── */
+  .craft { padding: clamp(110px, 14vh, 170px) 0; overflow: hidden; }
+  .craft-grid {
+    margin-top: clamp(48px, 6vw, 80px);
+    display: grid; grid-template-columns: 7fr 5fr; gap: clamp(36px, 5vw, 90px); align-items: center;
+  }
+  .craft-num {
+    font-weight: 900; letter-spacing: -.06em; line-height: .8;
+    font-size: clamp(120px, 22vw, 320px);
+    margin-left: calc(clamp(20px, 4.5vw, 60px) * -1.6);
+    color: transparent; -webkit-text-stroke: 3px var(--ink);
+    user-select: none;
+  }
+  .craft-num i { font-style: normal; font-size: .16em; letter-spacing: .22em; color: var(--crimson); -webkit-text-stroke: 0; vertical-align: .5em; margin-left: .3em; font-weight: 800; }
+  .craft-copy h3 { font-size: clamp(24px, 2.8vw, 34px); margin-top: 26px; }
+  .craft-copy p { margin-top: 22px; font-size: 15.5px; line-height: 2.1; color: rgba(11,11,10,.78); max-width: 30em; }
+  .craft-photo { border: var(--frame); position: relative; }
+  .craft-photo img { filter: saturate(.8) contrast(1.06); aspect-ratio: 4/3; object-fit: cover; width: 100%; }
+  .craft-photo figcaption {
+    position: absolute; left: -2px; bottom: -2px; background: var(--ink); color: var(--paper);
+    font-weight: 650; font-size: 10.5px; letter-spacing: .28em; padding: 10px 16px; text-transform: uppercase;
+  }
+
+  /* ── 03 메뉴 ── */
+  .menu { background: var(--ink); color: var(--paper); border-block: var(--frame); padding: clamp(110px, 14vh, 170px) 0; }
+  .menu .scene-no { border-color: var(--paper); }
+  .menu-deck {
+    margin-top: clamp(56px, 7vw, 100px);
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3vw, 44px);
+    align-items: start;
+  }
+  .dish { border: 2px solid var(--paper); background: var(--ink); }
+  .dish:nth-child(2) { margin-top: clamp(32px, 4.5vw, 72px); }
+  .dish:nth-child(3) { margin-top: clamp(64px, 9vw, 144px); }
+  .dish-photo { border-bottom: 2px solid var(--paper); overflow: hidden; }
+  .dish-photo img { filter: saturate(.8) contrast(1.06); aspect-ratio: 5/4; object-fit: cover; width: 100%; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+  .dish:hover .dish-photo img { transform: scale(1.045); }
+  .dish-body { padding: 30px 28px 34px; }
+  .dish-tag { font-weight: 650; font-size: 10.5px; letter-spacing: .3em; color: var(--crimson); text-transform: uppercase; }
+  .dish h3 { margin-top: 12px; font-size: 23px; font-weight: 850; letter-spacing: .01em; }
+  .dish .price { margin-top: 6px; font-weight: 650; font-size: 13px; letter-spacing: .1em; color: rgba(244,238,223,.66); }
+  .dish p { margin-top: 16px; font-size: 14px; line-height: 1.95; color: rgba(244,238,223,.78); }
+  .dish-type { padding: 40px 28px 44px; display: flex; flex-direction: column; min-height: 100%; }
+  .dish-type .naming-kanji { color: var(--crimson); font-size: 54px; }
+  .menu-more {
+    margin-top: clamp(48px, 6vw, 76px); border: 2px solid var(--paper);
+    display: grid; grid-template-columns: 1fr auto auto; align-items: center;
+  }
+  .menu-more p { padding: 24px 30px; font-size: 14.5px; font-weight: 500; color: rgba(244,238,223,.85); }
+  .menu-more p strong { color: var(--paper); font-weight: 800; }
+  .menu-more a {
+    align-self: stretch; display: flex; align-items: center; padding: 24px 30px;
+    border-left: 2px solid var(--paper); text-decoration: none;
+    font-weight: 800; font-size: 13px; letter-spacing: .18em; transition: background .25s, color .25s;
+  }
+  .menu-more a:hover { background: var(--crimson); }
+
+  /* ── 04 매장 ── */
+  .stores { padding: clamp(110px, 14vh, 170px) 0 clamp(140px, 18vh, 220px); }
+  .stores-proof { margin-top: 16px; font-weight: 650; font-size: 13px; letter-spacing: .16em; color: var(--wood); }
+  .store-grid {
+    margin-top: clamp(56px, 7vw, 96px);
+    display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 80px);
+    align-items: start;
+  }
+  .store:nth-child(2) { margin-top: clamp(48px, 8vw, 150px); }
+  .store { border: var(--frame); background: var(--paper); position: relative; }
+  .store-photo { border-bottom: var(--frame); overflow: hidden; position: relative; }
+  .store-photo img { filter: saturate(.8) contrast(1.06); aspect-ratio: 4/3; object-fit: cover; width: 100%; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+  .store:hover .store-photo img { transform: scale(1.04); }
+  .store-no {
+    position: absolute; top: 0; left: 0; background: var(--ink); color: var(--paper);
+    font-weight: 800; font-size: 11px; letter-spacing: .24em; padding: 11px 18px;
+  }
+  .store-body { padding: 42px 40px 46px; }
+  .store h3 { font-size: 27px; font-weight: 900; letter-spacing: .04em; }
+  .store h3 small { display: block; font-weight: 650; font-size: 10.5px; letter-spacing: .38em; color: var(--crimson); margin-top: 10px; text-transform: uppercase; }
+  .store-desc { margin-top: 20px; font-size: 14.5px; line-height: 2; color: rgba(11,11,10,.76); }
+  .store-only { margin-top: 14px; font-size: 13px; font-weight: 700; color: var(--wood); }
+  .store dl { margin-top: 26px; border-top: var(--frame); }
+  .store dl div { display: flex; padding: 13px 2px; border-bottom: 1px solid var(--ink-12); }
+  .store dt { width: 74px; flex-shrink: 0; font-weight: 800; font-size: 12px; letter-spacing: .2em; color: var(--crimson); }
+  .store dd { font-size: 14.5px; color: rgba(11,11,10,.8); line-height: 1.8; }
+  .store dd a { text-decoration: none; }
+  .store-links { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .store-links a {
+    text-decoration: none; font-weight: 800; font-size: 12.5px; letter-spacing: .14em;
+    border: var(--frame); padding: 13px 20px; transition: .25s;
+    background: var(--paper);
+  }
+  .store-links a.naver { background: var(--ink); color: var(--paper); }
+  .store-links a:hover { transform: translate(-3px, -3px); box-shadow: 5px 5px 0 var(--crimson); }
+
+  /* ── 클로징 ── */
+  .closing {
+    background: var(--crimson); color: var(--paper); border-top: var(--frame);
+    padding: clamp(130px, 18vh, 210px) 0; position: relative; overflow: hidden; text-align: left;
+  }
+  .closing-kanji {
+    position: absolute; top: 50%; right: -4vw; transform: translateY(-50%) rotate(4deg);
+    font-family: var(--serif-jp); font-weight: 700; font-size: clamp(300px, 42vw, 640px);
+    color: rgba(11,11,10,.14); line-height: 1; user-select: none; pointer-events: none;
+  }
+  .closing .display { position: relative; font-size: clamp(52px, 9vw, 132px); }
+  .closing .display .hollow { color: transparent; -webkit-text-stroke: 2.5px var(--paper); }
+  .closing-q {
+    position: relative; margin-top: 38px; font-size: clamp(19px, 2.3vw, 26px);
+    font-weight: 850; line-height: 1.7;
+  }
+  .closing-sub { position: relative; margin-top: 16px; font-size: 15px; color: rgba(244,238,223,.82); max-width: 34em; }
+  .closing-links { position: relative; margin-top: 44px; display: flex; flex-wrap: wrap; gap: 14px; }
+  .closing-links a {
+    text-decoration: none; font-weight: 800; font-size: 13px; letter-spacing: .16em;
+    border: 2px solid var(--paper); padding: 15px 24px; transition: .25s;
+  }
+  .closing-links a:hover { background: var(--paper); color: var(--crimson); }
+
+  /* ── 푸터 ── */
+  footer { background: var(--ink); color: var(--paper); padding: 60px 0 46px; }
+  footer .inner { display: grid; gap: 26px; }
+  .foot-brand { display: flex; align-items: center; gap: 14px; }
+  .foot-seal {
+    width: 40px; height: 40px; border-radius: 50%; background: var(--crimson); color: var(--paper);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif-jp); font-weight: 700; font-size: 20px;
+  }
+  .foot-brand b { font-weight: 900; font-size: 16px; letter-spacing: .3em; }
+  footer p.legal { font-size: 12px; font-weight: 400; color: rgba(244,238,223,.55); letter-spacing: .06em; line-height: 2.2; }
+  footer .foot-links { display: flex; flex-wrap: wrap; gap: 22px; font-size: 12px; }
+  footer .foot-links a { color: rgba(244,238,223,.75); text-decoration: none; font-weight: 650; letter-spacing: .12em; }
+  footer .foot-links a:hover { color: var(--paper); }
+
+  /* ── 리빌 (no-JS 폴백: 기본 보임) ── */
+  .reveal { opacity: 1; transform: none; }
+  html.js .reveal { opacity: 0; transform: translateY(30px); transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); }
+  html.js .reveal.on { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-photo img, .marquee-track, .scroll-hint::after { animation: none !important; }
+    html.js .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* ── 반응형 ── */
+  @media (max-width: 960px) {
+    nav.top-nav { display: none; }
+    .anchor-bar { display: flex; }
+    body { padding-bottom: 54px; }
+    .story-grid, .craft-grid, .store-grid { grid-template-columns: 1fr; }
+    .story-photo { position: static; }
+    .menu-deck { grid-template-columns: 1fr; }
+    .dish:nth-child(2), .dish:nth-child(3) { margin-top: 0; }
+    .dish { max-width: 560px; }
+    .dish:nth-child(2) { margin-left: auto; }
+    .store:nth-child(2) { margin-top: 0; }
+    .menu-more { grid-template-columns: 1fr; }
+    .menu-more a { border-left: 0; border-top: 2px solid var(--paper); }
+    .craft-num { margin-left: -6px; }
+    .declare-ko { margin-left: 0; }
+    .scroll-hint { display: none; }
+  }
+  @media (max-width: 420px) {
+    .hero h1.display { font-size: clamp(56px, 17vw, 76px); }
+    .store-body { padding: 32px 24px 36px; }
+    .dish-body { padding: 26px 22px 30px; }
+    .scene-head { grid-template-columns: 1fr; }
+    .scene-no { display: none; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="top">
+  <a class="brand-lockup" href="#top" aria-label="키세카츠 홈">
+    <b>키세카츠</b><span>KISEKATSU</span>
+  </a>
+  <nav class="top-nav" aria-label="주요 섹션">
+    <a href="#story">이야기</a>
+    <a href="#menu">메뉴</a>
+    <a href="#stores">매장</a>
+  </nav>
+</header>
+
+<nav class="anchor-bar" aria-label="모바일 바로가기">
+  <a href="#story">이야기</a>
+  <a href="#menu">메뉴</a>
+  <a href="#stores">매장</a>
+  <a class="res" href="#stores">예약</a>
+</nav>
+
+<main id="main">
+
+  <!-- 씬 1 · 히어로 -->
+  <section class="hero" id="top" aria-label="키세카츠 소개">
+    <div class="hero-photo" aria-hidden="true">
+      <picture>
+        <source type="image/webp" srcset="assets/img/hero-1080.webp 1080w, assets/img/hero-1920.webp 1920w" sizes="100vw">
+        <img src="assets/img/hero-fallback.jpg" alt="" fetchpriority="high">
+      </picture>
+      <div class="hero-shade"></div>
+    </div>
+    <div class="hero-stamp" aria-hidden="true">勝</div>
+    <div class="hero-inner">
+      <p class="hero-topline label-en">Kisekatsu · Seoul — Tonkatsu</p>
+      <h1 class="display"><span class="hollow">Eat a</span><span class="line2">Victory<span class="bang">!</span></span></h1>
+      <p class="hero-ko">매일 한 끼의 승리를 팝니다</p>
+      <p class="hero-meta">
+        <span>300시간 저온숙성 프리미엄 돈카츠</span>
+        <span>신사 가로수길 · 안국 북촌</span>
+      </p>
+    </div>
+    <p class="scroll-hint" aria-hidden="true">SCROLL</p>
+  </section>
+
+  <!-- 씬 2 · 마퀴 -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Everyday Victory</span><span class="jp">勝つ — 이길 승</span><span>Everyday Heritage</span><span class="jp">氣勢のとんかつ</span><span>Everyday Mastery</span>
+      <span>Everyday Victory</span><span class="jp">勝つ — 이길 승</span><span>Everyday Heritage</span><span class="jp">氣勢のとんかつ</span><span>Everyday Mastery</span>
+    </div>
+  </div>
+
+  <!-- 씬 3 · 01 스토리 -->
+  <section class="story" id="story">
+    <div class="inner">
+      <div class="scene-head reveal">
+        <span class="scene-no" aria-hidden="true">01</span>
+        <div>
+          <p class="label-en">Brand Story</p>
+          <h2 class="scene-title h-ko">이기고 싶은 날엔,<br>카츠를 먹는다</h2>
+        </div>
+      </div>
+      <div class="story-grid">
+        <div class="story-photo reveal">
+          <figure>
+            <picture>
+              <source type="image/webp" srcset="assets/img/sinsa-noren-700.webp 700w, assets/img/sinsa-noren-1200.webp 1200w" sizes="(max-width: 960px) 100vw, 40vw">
+              <img src="assets/img/sinsa-noren-1200.webp" alt="키세카츠 신사역점 외관 — 氣勢 글자가 쓰인 노렌 커튼" loading="lazy">
+            </picture>
+            <figcaption>Kisekatsu Sinsa — 氣勢 Noren</figcaption>
+          </figure>
+        </div>
+        <div>
+          <div class="naming-pair reveal">
+            <div class="naming-row">
+              <span class="naming-kanji" aria-hidden="true">氣勢</span>
+              <div>
+                <h3>키세 — 기세</h3>
+                <p>힘차고 당당한 기운. 움츠러들지 않고 나아가는 마음.</p>
+              </div>
+            </div>
+            <div class="naming-row">
+              <span class="naming-kanji" aria-hidden="true">勝つ</span>
+              <div>
+                <h3>카츠 — 이기다</h3>
+                <p>'커틀릿(カツ)'이자 '이기다(勝つ)'. 동음이의어에 담긴 승리의 기원.</p>
+              </div>
+            </div>
+          </div>
+          <div class="story-copy">
+            <p class="reveal">시험 전날, 면접 아침, 중요한 경기를 앞둔 날 — 일본에서는 <strong>'카츠(勝つ, 이기다)'와 발음이 같은 돈카츠</strong>를 먹으며 승리를 기원합니다. 백 년 넘게 이어져 온, 음식에 마음을 담는 문화입니다.</p>
+            <p class="reveal">키세카츠는 그 마음을 서울로 가져왔습니다. 가로수길과 북촌, 서로 다른 두 거리에서 당신의 소중한 하루에 기운과 작은 위로를 건넵니다.</p>
+            <p class="story-sum reveal">그래서 키세카츠는,<br><b>"기세 좋게, 당당히 승리한다"</b>는 이름입니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 씬 4 · 선언 -->
+  <section class="declare" aria-label="브랜드 선언">
+    <div class="inner">
+      <p class="display reveal"><em>Win</em> the day,<br><span class="win">one meal</span> at a time</p>
+      <p class="declare-ko reveal"><strong>승리는 거창하지 않습니다.</strong> 오늘 하루를 잘 살아내는 것 — 그 하루에 힘이 되는 한 끼를 차리는 것이 키세카츠의 일입니다.</p>
+    </div>
+  </section>
+
+  <!-- 씬 5 · 02 크래프트 -->
+  <section class="craft" aria-labelledby="craft-title">
+    <div class="inner">
+      <div class="scene-head reveal">
+        <span class="scene-no" aria-hidden="true">02</span>
+        <div>
+          <p class="label-en">Craft</p>
+          <h2 class="scene-title h-ko" id="craft-title">시간이 만드는 맛</h2>
+        </div>
+      </div>
+      <div class="craft-grid">
+        <div>
+          <p class="craft-num reveal" aria-hidden="true">300<i>Hours</i></p>
+          <div class="craft-copy reveal">
+            <h3 class="h-ko">300시간 저온숙성</h3>
+            <p>최고급 원육을 300시간 저온에서 천천히 숙성하고, 주문이 들어온 뒤에야 옷을 입혀 정통 방식으로 튀겨냅니다. 전통을 존중하되, 현대의 감각으로 다시 그린 프리미엄 일식 돈카츠입니다.</p>
+          </div>
+        </div>
+        <figure class="craft-photo reveal">
+          <picture>
+            <source type="image/webp" srcset="assets/img/hire-800.webp 800w, assets/img/hire-1400.webp 1400w" sizes="(max-width: 960px) 100vw, 38vw">
+            <img src="assets/img/hire-1400.webp" alt="히레카츠 정식 한 상 — 결이 고운 분홍빛 단면의 안심 카츠" loading="lazy">
+          </picture>
+          <figcaption>Hire Katsu — 안심의 결</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 씬 6 · 03 메뉴 -->
+  <section class="menu" id="menu">
+    <div class="inner">
+      <div class="scene-head reveal">
+        <span class="scene-no" aria-hidden="true">03</span>
+        <div>
+          <p class="label-en">Signature</p>
+          <h2 class="scene-title h-ko">한 접시의 기세</h2>
+        </div>
+      </div>
+      <div class="menu-deck">
+        <article class="dish reveal">
+          <div class="dish-photo">
+            <picture>
+              <source type="image/webp" srcset="assets/img/rosu-800.webp 800w, assets/img/rosu-1400.webp 1400w" sizes="(max-width: 960px) 100vw, 30vw">
+              <img src="assets/img/rosu-1400.webp" alt="스페셜 로스카츠 정식 한 상" loading="lazy">
+            </picture>
+          </div>
+          <div class="dish-body">
+            <p class="dish-tag">Special · 희소부위</p>
+            <h3>스페셜 로스카츠</h3>
+            <p class="price">17,000</p>
+            <p>가브리살을 품은 상등심. 하루 한정 수량으로만 준비되는, 키세카츠의 자부심입니다.</p>
+          </div>
+        </article>
+        <article class="dish reveal">
+          <div class="dish-photo">
+            <picture>
+              <source type="image/webp" srcset="assets/img/hire-800.webp 800w, assets/img/hire-1400.webp 1400w" sizes="(max-width: 960px) 100vw, 30vw">
+              <img src="assets/img/hire-1400.webp" alt="히레카츠 정식 한 상" loading="lazy">
+            </picture>
+          </div>
+          <div class="dish-body">
+            <p class="dish-tag">Tender</p>
+            <h3>히레카츠</h3>
+            <p class="price">16,000</p>
+            <p>힘줄 없이 부드러운 안심 180g. 한입에 사르르 풀리는 고운 고깃결.</p>
+          </div>
+        </article>
+        <article class="dish dish-type reveal">
+          <span class="naming-kanji" aria-hidden="true">勝</span>
+          <div class="dish-body" style="padding-inline:0">
+            <p class="dish-tag">Classic</p>
+            <h3>로스카츠 · 치즈카츠</h3>
+            <p class="price">14,000 · 16,000</p>
+            <p>기름기와 살코기의 균형이 좋은 등심 200g, 그리고 통 모짜렐라를 품은 치즈카츠. 카츠+면요리 세트로도 즐길 수 있습니다.</p>
+          </div>
+        </article>
+      </div>
+      <div class="menu-more reveal">
+        <p><strong>지점별 메뉴와 가격이 다릅니다.</strong> 표기는 신사역점 기준 — 전체 메뉴·계절 한정은 네이버 플레이스에서 확인해주세요.</p>
+        <a href="https://map.naver.com/p/entry/place/1186508365" target="_blank" rel="noopener">신사 메뉴 →</a>
+        <a href="https://map.naver.com/p/entry/place/2086785604" target="_blank" rel="noopener">안국 메뉴 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 씬 7 · 04 매장 -->
+  <section class="stores" id="stores">
+    <div class="inner">
+      <div class="scene-head reveal">
+        <span class="scene-no" aria-hidden="true">04</span>
+        <div>
+          <p class="label-en">Locations</p>
+          <h2 class="scene-title h-ko">두 거리, 하나의 기준</h2>
+          <p class="stores-proof">두 지점 리뷰 2,600+ · 신사 평점 4.83</p>
+        </div>
+      </div>
+      <div class="store-grid">
+        <article class="store reveal">
+          <div class="store-photo">
+            <span class="store-no">1호점 · 2024</span>
+            <picture>
+              <source type="image/webp" srcset="assets/img/sinsa-noren-700.webp 700w, assets/img/sinsa-noren-1200.webp 1200w" sizes="(max-width: 960px) 100vw, 44vw">
+              <img src="assets/img/sinsa-noren-1200.webp" alt="키세카츠 신사역점 외관" loading="lazy" style="object-position: 50% 72%">
+            </picture>
+          </div>
+          <div class="store-body">
+            <h3>신사역점<small>Sinsa · Garosu-gil</small></h3>
+            <p class="store-desc">가로수길의 활기 속, 키세카츠가 처음 시작된 곳. 'EAT A VICTORY'의 원형이 완성된 매장입니다.</p>
+            <dl>
+              <div><dt>주소</dt><dd>서울 강남구 논현로149길 52 1층 101호<br>신분당선 신사역 1번 출구 350m</dd></div>
+              <div><dt>전화</dt><dd><a href="tel:0507-1434-9179">0507-1434-9179</a></dd></div>
+              <div><dt>영업</dt><dd>매일 11:00 – 21:00 · 브레이크 16:00 – 17:00</dd></div>
+            </dl>
+            <div class="store-links">
+              <a class="naver" href="https://map.naver.com/p/entry/place/1186508365" target="_blank" rel="noopener">네이버 플레이스 · 예약</a>
+              <a href="https://maps.google.com/?cid=2862279312770974111" target="_blank" rel="noopener">구글 지도</a>
+            </div>
+          </div>
+        </article>
+        <article class="store reveal">
+          <div class="store-photo">
+            <span class="store-no">2호점 · 2025</span>
+            <picture>
+              <source type="image/webp" srcset="assets/img/anguk-front-700.webp 700w, assets/img/anguk-front-1200.webp 1200w" sizes="(max-width: 960px) 100vw, 44vw">
+              <img src="assets/img/anguk-front-1200.webp" alt="키세카츠 안국역점 입구와 오픈 키친" loading="lazy">
+            </picture>
+          </div>
+          <div class="store-body">
+            <h3>안국역점<small>Anguk · Bukchon</small></h3>
+            <p class="store-desc">북촌과 창덕궁 사이, 전통의 거리에서 세계의 손님을 맞이합니다. 다국어 메뉴가 준비되어 있습니다.</p>
+            <p class="store-only">안국 한정 — 나고야 미소카츠 · 키세불꽃부타동 · 마늘떡볶이치즈카츠</p>
+            <dl>
+              <div><dt>주소</dt><dd>서울 종로구 율곡로 88 2층 205호<br>안국역 4번 출구 344m · 주차 무료(평일 1시간·주말 3시간)</dd></div>
+              <div><dt>전화</dt><dd><a href="tel:0507-1338-1981">0507-1338-1981</a></dd></div>
+              <div><dt>영업</dt><dd>매일 11:00 – 21:00 · 브레이크 16:00 – 17:00</dd></div>
+            </dl>
+            <div class="store-links">
+              <a class="naver" href="https://map.naver.com/p/entry/place/2086785604" target="_blank" rel="noopener">네이버 플레이스 · 예약</a>
+              <a href="https://maps.google.com/?cid=6101151766151297783" target="_blank" rel="noopener">구글 지도</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 씬 8 · 클로징 -->
+  <section class="closing" aria-label="마무리">
+    <span class="closing-kanji" aria-hidden="true">勝</span>
+    <div class="inner">
+      <p class="display reveal">Eat a <span class="hollow">Victory!</span></p>
+      <p class="closing-q reveal">오늘, 당신의 승리는 무엇인가요?</p>
+      <p class="closing-sub reveal">중요한 도전을 앞둔 당신에게, 맛있는 한 끼와 함께 '오늘의 승리'를 선사합니다.</p>
+      <div class="closing-links reveal">
+        <a href="https://www.instagram.com/kise.katsu" target="_blank" rel="noopener">인스타그램 @kise.katsu</a>
+        <a href="#stores">매장 찾기</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <div class="foot-brand">
+      <span class="foot-seal" aria-hidden="true">勝</span>
+      <b>키세카츠 KISEKATSU</b>
+    </div>
+    <div class="foot-links">
+      <a href="https://www.instagram.com/kise.katsu" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://map.naver.com/p/entry/place/1186508365" target="_blank" rel="noopener">신사역점</a>
+      <a href="https://map.naver.com/p/entry/place/2086785604" target="_blank" rel="noopener">안국역점</a>
+      <a href="privacy.html">개인정보처리방침</a>
+    </div>
+    <p class="legal">키세카츠 KISEKATSU · 운영 (주)올라레에프앤씨 · 대표이사 김범조 · 사업자등록번호 710-81-04266 · © 2026 KISEKATSU</p>
+  </div>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+  const io = new IntersectionObserver(entries => entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
+  }), { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
