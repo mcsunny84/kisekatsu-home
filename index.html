@@ -17,12 +17,12 @@ BUILD NOTE: 도메인 확정 시 https://kisekatsu.kr 문자열 일괄 치환(ca
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>키세카츠 KISEKATSU — 승리를 파는 돈카츠 · 신사 가로수길 · 안국 북촌</title>
-<meta name="description" content="300시간 저온숙성 프리미엄 돈카츠 키세카츠. 일본에서 승리를 기원하며 먹는 카츠(勝つ)의 문화를 서울 신사 가로수길과 안국 북촌에서. 두 지점 리뷰 2,600+.">
+<title>키세카츠 KISEKATSU — 승리를 파는 돈카츠 · 신사 가로수길 · 안국 북촌 · 신논현</title>
+<meta name="description" content="300시간 저온숙성 프리미엄 돈카츠 키세카츠. 일본에서 승리를 기원하며 먹는 카츠(勝つ)의 문화를 서울 신사 가로수길, 안국 북촌, 신논현역에서. 신사·안국 리뷰 2,600+.">
 <link rel="canonical" href="https://kisekatsu.kr/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="키세카츠 KISEKATSU — EAT A VICTORY!">
-<meta property="og:description" content="300시간 저온숙성 프리미엄 돈카츠. 신사 가로수길 · 안국 북촌.">
+<meta property="og:description" content="300시간 저온숙성 프리미엄 돈카츠. 신사 가로수길 · 안국 북촌 · 신논현.">
 <meta property="og:url" content="https://kisekatsu.kr/">
 <meta property="og:image" content="https://kisekatsu.kr/assets/img/og.jpg">
 <meta property="og:locale" content="ko_KR">
@@ -80,6 +80,28 @@ BUILD NOTE: 도메인 확정 시 https://kisekatsu.kr 문자열 일괄 치환(ca
       "sameAs": ["https://map.naver.com/p/entry/place/2086785604"],
       "openingHours": "Mo-Su 11:00-16:00,17:00-21:00",
       "acceptsReservations": "https://map.naver.com/p/entry/place/2086785604",
+      "parentOrganization": {"@id": "https://kisekatsu.kr/#brand"}
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://kisekatsu.kr/#sinnonhyeon",
+      "name": "키세카츠 신논현점",
+      "servesCuisine": "돈카츠",
+      "priceRange": "₩10,000~₩20,000",
+      "telephone": "0507-1327-9175",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "봉은사로4길 22 1층",
+        "addressLocality": "강남구",
+        "addressRegion": "서울",
+        "postalCode": "06123",
+        "addressCountry": "KR"
+      },
+      "geo": {"@type": "GeoCoordinates", "latitude": 37.5033958, "longitude": 127.0263934},
+      "url": "https://kisekatsu.kr/#sinnonhyeon",
+      "sameAs": ["https://map.naver.com/p/entry/place/2099352367", "https://maps.google.com/?cid=9476467565209082547"],
+      "openingHours": "Mo-Su 11:00-16:00,17:00-21:00",
+      "acceptsReservations": "https://booking.naver.com/booking/6/bizes/1740960",
       "parentOrganization": {"@id": "https://kisekatsu.kr/#brand"}
     }
   ]
@@ -360,6 +382,10 @@ BUILD NOTE: 도메인 확정 시 https://kisekatsu.kr 문자열 일괄 치환(ca
     align-items: start;
   }
   .store:nth-child(2) { margin-top: clamp(48px, 8vw, 150px); }
+  @media (min-width: 1200px) {
+    .store-grid { grid-template-columns: repeat(3, 1fr); gap: clamp(28px, 2.6vw, 48px); }
+    .store-body { padding: 36px 30px 40px; }
+  }
   .store { border: var(--frame); background: var(--paper); position: relative; }
   .store-photo { border-bottom: var(--frame); overflow: hidden; position: relative; }
   .store-photo img { filter: saturate(.8) contrast(1.06); aspect-ratio: 4/3; object-fit: cover; width: 100%; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
@@ -503,7 +529,7 @@ BUILD NOTE: 도메인 확정 시 https://kisekatsu.kr 문자열 일괄 치환(ca
       <p class="hero-ko">매일 한 끼의 승리를 팝니다</p>
       <p class="hero-meta">
         <span>300시간 저온숙성 프리미엄 돈카츠</span>
-        <span>신사 가로수길 · 안국 북촌</span>
+        <span>신사 가로수길 · 안국 북촌 · 신논현</span>
       </p>
     </div>
     <p class="scroll-hint" aria-hidden="true">SCROLL</p>
@@ -665,8 +691,8 @@ BUILD NOTE: 도메인 확정 시 https://kisekatsu.kr 문자열 일괄 치환(ca
         <span class="scene-no" aria-hidden="true">04</span>
         <div>
           <p class="label-en">Locations</p>
-          <h2 class="scene-title h-ko">두 거리, 하나의 기준</h2>
-          <p class="stores-proof">두 지점 리뷰 2,600+ · 신사 평점 4.83</p>
+          <h2 class="scene-title h-ko">세 거리, 하나의 기준</h2>
+          <p class="stores-proof">신사·안국 리뷰 2,600+ · 신사 평점 4.83</p>
         </div>
       </div>
       <div class="store-grid">
@@ -674,7 +700,7 @@ BUILD NOTE: 도메인 확정 시 https://kisekatsu.kr 문자열 일괄 치환(ca
           <div class="store-photo">
             <span class="store-no">1호점 · 2024</span>
             <picture>
-              <source type="image/webp" srcset="assets/img/sinsa-noren-700.webp 700w, assets/img/sinsa-noren-1200.webp 1200w" sizes="(max-width: 960px) 100vw, 44vw">
+              <source type="image/webp" srcset="assets/img/sinsa-noren-700.webp 700w, assets/img/sinsa-noren-1200.webp 1200w" sizes="(max-width: 960px) 100vw, (max-width: 1199px) 44vw, 30vw">
               <img src="assets/img/sinsa-noren-1200.webp" alt="키세카츠 신사역점 외관" loading="lazy" style="object-position: 50% 72%">
             </picture>
           </div>
@@ -696,14 +722,14 @@ BUILD NOTE: 도메인 확정 시 https://kisekatsu.kr 문자열 일괄 치환(ca
           <div class="store-photo">
             <span class="store-no">2호점 · 2025</span>
             <picture>
-              <source type="image/webp" srcset="assets/img/anguk-front-700.webp 700w, assets/img/anguk-front-1200.webp 1200w" sizes="(max-width: 960px) 100vw, 44vw">
+              <source type="image/webp" srcset="assets/img/anguk-front-700.webp 700w, assets/img/anguk-front-1200.webp 1200w" sizes="(max-width: 960px) 100vw, (max-width: 1199px) 44vw, 30vw">
               <img src="assets/img/anguk-front-1200.webp" alt="키세카츠 안국역점 입구와 오픈 키친" loading="lazy">
             </picture>
           </div>
           <div class="store-body">
             <h3>안국역점<small>Anguk · Bukchon</small></h3>
             <p class="store-desc">북촌과 창덕궁 사이, 전통의 거리에서 세계의 손님을 맞이합니다. 다국어 메뉴가 준비되어 있습니다.</p>
-            <p class="store-only">안국 한정 — 나고야 미소카츠 · 키세불꽃부타동 · 마늘떡볶이치즈카츠</p>
+            <p class="store-only">안국·신논현 한정 — 나고야 미소카츠 · 키세불꽃부타동 · 마늘떡볶이치즈카츠</p>
             <dl>
               <div><dt>주소</dt><dd>서울 종로구 율곡로 88 2층 205호<br>안국역 4번 출구 344m · 주차 무료(평일 1시간·주말 3시간)</dd></div>
               <div><dt>전화</dt><dd><a href="tel:0507-1338-1981">0507-1338-1981</a></dd></div>
@@ -712,6 +738,29 @@ BUILD NOTE: 도메인 확정 시 https://kisekatsu.kr 문자열 일괄 치환(ca
             <div class="store-links">
               <a class="naver" href="https://map.naver.com/p/entry/place/2086785604" target="_blank" rel="noopener">네이버 플레이스 · 예약</a>
               <a href="https://maps.google.com/?cid=6101151766151297783" target="_blank" rel="noopener">구글 지도</a>
+            </div>
+          </div>
+        </article>
+        <article class="store reveal" id="sinnonhyeon">
+          <div class="store-photo">
+            <span class="store-no">3호점 · 2026</span>
+            <picture>
+              <source type="image/webp" srcset="assets/img/sinnonhyeon-front-700.webp 700w, assets/img/sinnonhyeon-front-1200.webp 1200w" sizes="(max-width: 960px) 100vw, (max-width: 1199px) 44vw, 30vw">
+              <img src="assets/img/sinnonhyeon-front-1200.webp" alt="키세카츠 신논현점 외관 — 氣勢豚勝 간판과 1층 입구" loading="lazy">
+            </picture>
+          </div>
+          <div class="store-body">
+            <h3>신논현점<small>Sinnonhyeon · Gangnam</small></h3>
+            <p class="store-desc">강남역과 신논현역 사이, 1층 매장. 바쁜 점심에도 중요한 날의 저녁에도 같은 기준으로 튀겨냅니다.</p>
+            <p class="store-only">안국·신논현 한정 — 나고야 미소카츠 · 키세불꽃부타동 · 마늘떡볶이치즈카츠</p>
+            <dl>
+              <div><dt>주소</dt><dd>서울 강남구 봉은사로4길 22 1층<br>신논현역 4번 출구 195m · 도보 2분</dd></div>
+              <div><dt>전화</dt><dd><a href="tel:0507-1327-9175">0507-1327-9175</a></dd></div>
+              <div><dt>영업</dt><dd>매일 11:00 – 21:00 · 브레이크 16:00 – 17:00</dd></div>
+            </dl>
+            <div class="store-links">
+              <a class="naver" href="https://map.naver.com/p/entry/place/2099352367" target="_blank" rel="noopener">네이버 플레이스 · 예약</a>
+              <a href="https://maps.google.com/?cid=9476467565209082547" target="_blank" rel="noopener">구글 지도</a>
             </div>
           </div>
         </article>
@@ -745,6 +794,7 @@ BUILD NOTE: 도메인 확정 시 https://kisekatsu.kr 문자열 일괄 치환(ca
       <a href="https://www.instagram.com/kise.katsu" target="_blank" rel="noopener">Instagram</a>
       <a href="https://map.naver.com/p/entry/place/1186508365" target="_blank" rel="noopener">신사역점</a>
       <a href="https://map.naver.com/p/entry/place/2086785604" target="_blank" rel="noopener">안국역점</a>
+      <a href="https://map.naver.com/p/entry/place/2099352367" target="_blank" rel="noopener">신논현점</a>
       <a href="privacy.html">개인정보처리방침</a>
     </div>
     <p class="legal">키세카츠 KISEKATSU · 운영 (주)올라레에프앤씨 · 대표이사 김범조 · 사업자등록번호 710-81-04266 · © 2026 KISEKATSU</p>
